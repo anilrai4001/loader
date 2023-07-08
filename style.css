@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    /* border: 2px solid red; */
+}
+
+body{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    /* background-color: black; */
+    border-top: 10px solid red;
+    border-right: 10px solid yellow;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid green;
+    border-radius: 50%;
+
+    animation-name: loader;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
